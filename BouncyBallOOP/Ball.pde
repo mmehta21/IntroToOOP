@@ -17,4 +17,9 @@ class Ball {
     noStroke();
     ellipse(loc.x, loc.y, diam, diam);
   }
+  void move(){
+    vel=PVector.random2D();
+    loc.add(vel);
+}
+
 }
